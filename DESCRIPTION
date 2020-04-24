@@ -1,0 +1,20 @@
+Package: covidcrosscountry
+Title: Automated cross-country/province data collection on COVID-19
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Young",
+           family = "Ahn",
+           role = c("aut", "cre"),
+           email = "chiyahn@mail.ubc.ca")
+Description: Mines and cleans COVID-19 data 
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    lubridate,
+    stringr,
+    countrycode,
+    pwt9,
+    dplyr,
+    tidyr
+    

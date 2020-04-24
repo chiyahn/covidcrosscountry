@@ -1,0 +1,48 @@
+country,countrycode,bcg_mass_vaccination_period,bcg_timing,bcg_vaccinated_age_at_2020,bcg_popular
+Belgium,BEL,Limited,,,0
+Turkey,TUR,1952-2018+,at Birth,0-68,1
+Spain,ESP,1965-1981,at Birth,39-55,0
+Brazil,BRA,1976-2018+,at Birth,0-44,1
+Ireland,IRL,1950s-2003?,at Birth,17-72+,0
+UK,GBR,1953-2005,12-13 y/o,28-80,0
+Portugal,PRT,1965-2017,at Birth,3-55,1
+Mexico,MEX,1951-2018+,at Birth,0-69,1
+Romania,ROU,1928-2018+,at Birth,0-92,1
+Germany,DEU,1961-1998,at Birth,22-59,0
+Netherlands,NLD,Limited,,,0
+Italy,ITA,Limited,,,0
+Dominican Republic,DOM,<1990-2018+,at Birth,0-30+,1
+Czechia,CZE,1953-2010,at Birth,10-67,1
+USA,USA,Limited,,,0
+Morocco,MAR,1949-2018+,at Birth,0-71,1
+France,FRA,1950-2007,at Birth,13-70,1
+Israel,ISR,1955-1982,at Birth,38-65,0
+Austria,AUT,1952-1990,at Birth,30-68,0
+Ecuador,ECU,<1995-2018+,at Birth,0-25+,1
+Sweden,SWE,1940-1975,at Birth,45-80,0
+Switzerland,CHE,1960s-1987,at Birth,33-50+,0
+Denmark,DNK,1946-1986,at Birth,34-74,0
+Iran,IRN,1984-2018+,at Birth,0-36,1
+China,CHN,1949-2018+,at Birth,0-71,1
+Peru,PER,<1990-2018+,at Birth,0-30+,1
+Canada,CAN,Limited,,,0
+India,IND,1951-2018+,at Birth,0-69,1
+Indonesia,IDN,1999-2018+,at Birth,0-21,1
+Algeria,DZA,<1985-2018+,at Birth,0-35+,1
+Argentina,ARG,<1980-2018+,at Birth,0-40+,1
+Panama,PAN,<1980-2018+,at Birth,0-40+,1
+Poland,POL,1955-2018+,at Birth,0-65,1
+Pakistan,PAK,1978-2018+,at Birth,0-42,1
+Greece,GRC,<1980-2011+,6 y/o,6-46+,1
+Philippines,PHL,1979-2018+,at Birth,0-41,1
+Egypt,EGY,<1990-2018+,at Birth,0-30+,1
+Malaysia,MYS,<1980-2018+,at Birth,0-40+,1
+Norway,NOR,1947-2009,at Birth,11-99,1
+Tunisia,TUN,<1982-2018+,at Birth,0-38+,1
+Hungary,HUN,1953-2018+,at Birth,0-,1
+Albania,ALB,<1980-2018+,at Birth,0-40+,1
+S. Korea,KOR,1970s-2018+,at Birth,0-40+,1
+Australia,AUS,1950s-1985?,school age,45-70,0
+Iraq,IRQ,<1980-2018+,at Birth,0-40+,1
+Japan,JPN,<1951-2020,at Birth,0-69+,1
+Bangladesh,BGD,<1990-2018+,at Birth,0-40+,1
