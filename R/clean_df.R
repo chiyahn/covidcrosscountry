@@ -14,7 +14,7 @@ clean_df_cases_dates <- function(df) {
     dplyr::rename(date = date.raw)
 }
 
-clean_df_cases <- function (df, data.per.province = FALSE) {
+clean_df_cases <- function (df, region.level = FALSE) {
   # rename
   df <- df %>%
     clean_df_cases_dates() %>%
@@ -26,7 +26,7 @@ clean_df_cases <- function (df, data.per.province = FALSE) {
       countrycode::countrycode(country, origin = "country.name", destination = "iso3c"))
 
   # add cases per each province to a national level
-  if (!data.per.province)
+  if (region.level == "national")
     df <- df %>%
       dplyr::group_by(countrycode, date, country) %>%
       dplyr::summarize(cases = sum(cases))

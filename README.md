@@ -29,6 +29,7 @@ covidcrosscountry::fetch_all_daily()
 ```
 includes the following data:
 
+- `fetch_mobility`: Google COVID-19 Community Mobility Reports; movement trends over time by geography, across different categories of places such as retail and recreation, groceries and pharmacies, parks, transit stations, workplaces, and residential. Repo: https://www.google.com/covid19/mobility/
 - `fetch_cases`: 2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE; cross-country data for the number of confirmed/deceased/recovered cases. Repo: https://github.com/CSSEGISandData/COVID-19
 - `fetch_policy`: Oxford Covid-19 Government Response Tracker (OxCGRT); systematic information on which governments have taken which measures, and when. Repo: https://github.com/OxCGRT/covid-policy-tracker/
 
