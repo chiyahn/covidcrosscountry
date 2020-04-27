@@ -1,12 +1,12 @@
-fetch_cases <- function(DATA.PER.PROVINCE = FALSE) {
+fetch_cases <- function (region.level = "national") {
   df.confirmed <- read.csv(DATA.PATH.JHU.CONFIRMED) %>%
-    clean_df_cases(data.per.province = DATA.PER.PROVINCE) %>%
+    clean_df_cases(region.level = region.level) %>%
     dplyr::rename(confirmed = cases)
   df.deaths <- read.csv(DATA.PATH.JHU.DEATHS) %>%
-    clean_df_cases(data.per.province = DATA.PER.PROVINCE) %>%
+    clean_df_cases(region.level = region.level) %>%
     dplyr::rename(deaths = cases)
   df.recoveries <- read.csv(DATA.PATH.JHU.RECOVERIES) %>%
-    clean_df_cases(data.per.province = DATA.PER.PROVINCE) %>%
+    clean_df_cases(region.level = region.level) %>%
     dplyr::rename(recoveries = cases)
 
   df.confirmed %>%
