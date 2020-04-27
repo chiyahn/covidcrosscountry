@@ -1,5 +1,6 @@
-fetch_all_daily <- function() {
-  fetch_cases() %>%
+fetch_all_daily <- function(region.level = "national") {
+  fetch_mobility(region.level = region.level) %>%
+    left_join_daily(fetch_cases(region.level = region.level)) %>%
     left_join_daily(fetch_policies()) %>%
     dplyr::group_by(countrycode, date)
 }
