@@ -24,3 +24,35 @@ fetch_policies <- function() {
     dplyr::rename(date = Date) %>%
     dplyr::group_by(countrycode, date)
 }
+
+fetch_mobility <- function(region.level = "national") {
+  df.mobility <- read.csv(DATA.PATH.GOOGLE.MOBILITY)
+  df.mobility <- df.mobility %>%
+    dplyr::as_tibble() %>%
+    dplyr::rename(country = country_region) %>%
+    dplyr::rename(countrycode = country_region_code) %>%
+    dplyr::mutate(countrycode =
+                    countrycode::countrycode(countrycode, origin = "iso2c", destination = "iso3c")) %>%
+    dplyr::mutate(date = lubridate::ymd(date))
+
+  # choose the data according to the desired region.level
+  if (region.level == "national") {
+    df.mobility <- df.mobility %>%
+      dplyr::filter(sub_region_1 == "") %>%
+      dplyr::filter(sub_region_2 == "") %>%
+      dplyr::select(-sub_region_1) %>%
+      dplyr::select(-sub_region_2)
+  } else if (region.level == "provincial" || region.level == "state") {
+    df.mobility <- df.mobility %>%
+      dplyr::filter(sub_region_1 != "") %>%
+      dplyr::filter(sub_region_2 == "") %>%
+      dplyr::select(-sub_region_2)
+  } else if (region.level == "county") {
+    df.mobility <- df.mobility %>%
+      dplyr::filter(sub_region_2 != "")
+  }
+
+  df.mobility
+}
+
+
