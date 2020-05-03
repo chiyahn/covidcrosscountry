@@ -16,7 +16,6 @@ fetch_cases <- function (region.level = "national") {
 
 fetch_policies <- function() {
   read.csv(DATA.PATH.OXFORD.POLICY) %>%
-    dplyr::select(-X) %>%
     dplyr::as_tibble() %>%
     dplyr::mutate(Date = lubridate::ymd(Date)) %>%
     dplyr::rename(country = CountryName) %>%
