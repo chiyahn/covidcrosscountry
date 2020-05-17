@@ -12,8 +12,8 @@ fetch_all_fixed <- function() {
     dplyr::group_by(countrycode)
 }
 
-fetch_all <- function() {
-  fetch_all_daily() %>%
+fetch_all <- function(region.level = "national") {
+  fetch_all_daily(region.level = region.level) %>%
     left_join_fixed(fetch_all_fixed()) %>%
     dplyr::group_by(countrycode, date)
 }
