@@ -1,3 +1,4 @@
+"DF.BCG.POLICY"
 
 fetch_fixed_telework <- function() {
   read.csv(DATA.PATH.DINGEL.NEIMAN) %>%
