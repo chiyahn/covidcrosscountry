@@ -10,14 +10,13 @@ fetch_fixed_BCG <- function() {
   DF.BCG.POLICY
 }
 
-# TODO: fix this
-fetch_fixed_pwt <- function(year = 2005) {
+fetch_fixed_pwt <- function(year.pivot = 2017) {
   pwt9::pwt9.1 %>%
     dplyr::as_tibble() %>%
-    dplyr::filter(year == 2015) %>%
+    dplyr::filter(year == year.pivot) %>%
     dplyr::select(-year) %>%
-    dplyr::rename_all(paste0, "2015") %>%
-    dplyr::rename(country = country2015) %>%
-    dplyr::rename(countrycode = isocode2015)
+    dplyr::rename_all(paste0, year.pivot) %>%
+    dplyr::rename(country = paste0("country", year.pivot)) %>%
+    dplyr::rename(countrycode = paste0("isocode", year.pivot))
 }
 
